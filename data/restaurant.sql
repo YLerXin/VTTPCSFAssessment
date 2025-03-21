@@ -6,10 +6,11 @@ drop database if exists restaurant;
 create database restaurant;
 
 use restaurant;
-
+--to ensure customers name exist in place orders
 create table customers (
-  username varchar(64) not null,
-  password varchar(128) not null
+/*   username varchar(64) not null,
+ */ username varchar(64) not null unique,
+    password varchar(128) not null
 );
 
 insert into customers(username, password) values
@@ -21,3 +22,11 @@ insert into customers(username, password) values
 
 -- TODO: Task 1.2
 -- Write your task 1.2 below
+
+create table place_orders(
+order_id char(8) primary key,
+payment_id varchar(128) unique,
+order_data date,
+total DECIMAL(8,2),
+username varchar(64)
+);

@@ -2,7 +2,7 @@
   <div class="col">
     <div class="fs-1 fw-bold text-primary">Order Placed</div>
     <div class="d-flex justify-content-end">
-      <button type="button" class="btn btn-secondary">Back</button>
+      <button type="button" class="btn btn-secondary" (click)="return()">Back</button>
     </div>
   </div>
 </div>
@@ -14,19 +14,19 @@
       <tbody>
         <tr>
           <td>Date:</td>
-          <td> <code>Friday, March 21 2025</code> </td>
+          <td> <code>{{date}}</code> </td>
         </tr>
         <tr>
           <td>Order Id:</td>
-          <td> <code>abc123</code> </td>
+          <td> <code>{{orderId}}</code> </td>
         </tr>
         <tr>
           <td>Payment Id:</td>
-          <td> <code>xyz789</code> </td>
+          <td> <code>{{paymentId}}</code> </td>
         </tr>
         <tr>
           <td>Total:</td>
-          <td> <code>$12.00</code> </td>
+          <td> <code>${{total}}</code> </td>
         </tr>
       </tbody>
     </table>
