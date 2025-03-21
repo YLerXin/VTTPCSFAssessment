@@ -9,62 +9,6 @@
   </div>
 </div>
 
-<!-- each row display a single mene item -->
-<!-- <div class="row mb-2">
-  <div class="col">
-    <div class="menu-item">
-      <div>
-        <button type="button" class="btn btn-warning">
-          <i class="bi bi-x-square"></i>
-        </button>
-      </div>
-      <div class="menu-details">
-        <div>Name: <span class="fw-bold"> XXX </span> </div>
-        <div>Description:
-          <span class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </span>
-        </div>
-        <div></div>
-          <div class="text-danger fw-bold">Quantity: XXX</div>
-      </div>
-      <div class="menu-button-end">
-        <button type="button" class="btn btn-success">
-          <i class="bi bi-plus-circle"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row mb-2">
-  <div class="col">
-    <div class="menu-item">
-      <div>
-        <button type="button" class="btn btn-warning">
-          <i class="bi bi-x-square"></i>
-        </button>
-      </div>
-      <div class="menu-details">
-        <div>Name: <span class="fw-bold"> XXX </span> </div>
-        <div>Description:
-          <span class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </span>
-        </div>
-        <div></div>
-          <div class="text-danger fw-bold">Quantity: XXX</div>
-      </div>
-      <div class="menu-button-end">
-        <button type="button" class="btn btn-success">
-          <i class="bi bi-plus-circle"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
 <div *ngIf="menuitems$ | async as items">
   <div *ngIf="items.length>0">
     <div *ngFor="let t of items" class="menu-item">

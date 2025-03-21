@@ -1,0 +1,7 @@
+.angular
+.vscode
+node_modules
+client/node_modules
+client/dist
+server/target
+data
