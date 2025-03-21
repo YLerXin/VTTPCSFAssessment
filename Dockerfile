@@ -29,11 +29,6 @@ COPY --from=j-build /src/target/server-0.0.1-SNAPSHOT.jar app.jar
 
 ENV PORT=3000
 ##the ENV was Here
-ENV MYSQL_URL="jdbc:mysql://some-host:3306/project" \
-    MYSQL_USERNAME="root" \
-    MYSQL_PASSWORD="password123" \
-    MONGO_URI="mongodb://mongo-host:27017"
-
 EXPOSE ${PORT}
 
 SHELL [ "/bin/sh", "-c" ]
